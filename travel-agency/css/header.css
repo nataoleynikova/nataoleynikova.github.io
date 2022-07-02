@@ -1,0 +1,47 @@
+font-face {
+  font-family: Brygada_1918;
+  src: url("../fonts/Brygada_1918/static/Brygada1918-Bold.ttf"); 
+}
+
+#header {
+  background-color: #353434;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%; 
+}
+
+.pages {
+  margin: 0 0 0 0;
+  padding: 0 0 15px 15px; 
+}
+
+.page {
+  display: inline; 
+}
+
+.page a {
+  color: #fbfcfd;
+  font: italic 15px Montserrat, sans-serif;
+  margin: 0 50px 0 0;
+  text-decoration: none;
+  width: 50px; 
+}
+
+.page a:hover {
+  text-decoration:underline;
+}
+
+.title {
+  color: #fbfcfd;
+  font: 20px Brygada_1918, serif;
+  padding: 0 0 0 15px;
+}
+
+.calculator {
+  align-items: flex-end;
+  box-sizing: content-box;
+  color: #fbfcfd;
+  display: flex;
+  flex-direction: row; 
+}

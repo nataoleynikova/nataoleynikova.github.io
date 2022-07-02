@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Туристическая компания L'Avion | Туры по всему миру</title>
+    <link rel="Stylesheet" href="css/catalog.css">
+    <link rel="Stylesheet" href="css/media.css">
+    <link rel="Stylesheet" href="css/header.css">
+    <link rel="Stylesheet" href="css/footer.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#europe").click(function() {
+          $("#content").toggle();
+        });
+        $("#n_america").click(function() {
+          $("#content_2").toggle();
+        });
+        $("#l_america").click(function() {
+          $("#content_3").toggle();
+        });
+        $("#asia").click(function() {
+          $("#content_4").toggle();
+        });
+        $("#africa").click(function() {
+          $("#content_5").toggle();
+        });
+        $("#russia").click(function() {
+          $("#content_6").toggle();
+        });
+        $("#australia").click(function() {
+          $("#content_7").toggle();
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- Шапка -->
+    <div id="header">
+      <div class="pages">
+        <li class="page"><a href="index.html">Главная</a></li>
+        <li class="page"><a href="about_us.html">О компании</a></li>
+        <li class="page"><a href="catalog.html">Каталог туров</a></li>
+        <li class="page"><a href="calculator.html">Рассчет туров</a></li>
+      </div>
+      <div class="title-calc">
+        <h2 class="title">Туристическая компания L'Avion - с нами Вы увидите 
+          весь мир!</h2>
+      </div>
+    </div>
+    <div class="countries">
+      <!-- Блок Европа -->
+      <div class="block">
+        <ul><h3><a href="#" id="europe">Туры по Европе</a></h3>
+          <div id="content">
+            <li>Германия</li>
+            <li>Франция</li>
+            <li>Греция</li>
+            <li>Великобритания</li>
+            <li>Австрия</li>
+            <li>Чехия</li>
+            <li>Черногория</li>
+            <li>Автобусные туры</li>
+          </div>
+        </ul>
+      </div>
+
+      <!-- Блок С.Америка -->
+      <div class="block">
+        <ul><h3><a href="#" id="n_america">Туры по Северной Америке</a></h3>
+          <div id="content_2">
+            <li>Соединенные Штаты Америки</li>
+            <li>Канада</li>
+          </div>
+        </ul>
+      </div>
+
+      <!-- Блок Л.Америка -->
+      <div class="block">
+        <ul><h3><a href="#" id="l_america">Туры по Латинской Америке</a></h3>
+          <div id="content_3">
+            <li>Бразилия</li>
+            <li>Чили</li>
+            <li>Аргентина</li>
+            <li>Куба</li>
+            <li>Доминикана</li>
+            <li>Мексика</li>
+          </div>
+        </ul>
+      </div>
+
+      <!-- Блок Азия -->
+      <div class="block">
+        <ul><h3><a href="#" id="asia">Туры по Азии</a></h3>
+          <div id="content_4">
+            <li>Китай</li>
+            <li>Индия</li>
+            <li>Эмираты</li>
+            <li>Саудовская Аравия</li>
+            <li>Япония</li>
+            <li>Южная Корея</li>
+          </div>
+        </ul>
+      </div>
+
+      <!-- Блок Африка -->
+      <div class="block">
+        <ul><h3><a href="#" id="africa">Туры по Африке</a></h3>
+          <div id="content_5">
+            <li>Египет</li>
+            <li>Тунис</li>
+            <li>Мадейра</li>
+            <li>Сейшелы</li>
+            <li>Мадагаскар</li>
+            <li>Танзания</li>
+          </div>
+        </ul>
+      </div>
+
+      <!-- Блок Россия -->
+      <div class="block">
+        <ul><h3><a href="#" id="russia">Туры по России</a></h3>
+          <div id="content_6">
+            <li>Москва</li>
+            <li>Санкт-Петербург</a></li>
+            <li>Золотое Кольцо</li>
+            <li>Серебряная подкова Дона</li>
+            <li>Кавказские Минеральные воды</li>
+            <li>Крым</li>
+            <li>Карелия</li>
+            <li>Туры выходного дня</li>
+          </div>
+        </ul>
+      </div>
+
+      <!-- Блок Австралия -->
+      <div class="block">
+        <ul><h3><a href="#" id="australia">Туры по Австралии и Океании</a></h3>
+          <div id="content_7">
+            <li>Австралия</li>
+            <li>Новая Зеландия</li>
+            <li>Фиджи</li>
+          </div>
+        </ul> 
+      </div>
+      
+      <div class="block">
+        <ul><h3><a href="#">Эксклюзивные туры</a></h3></ul>
+      </div>
+    </div>
+    <!-- Подвал -->
+    <div class="footer-menu">
+      <div class="footer-container">
+
+        <!-- Активные ссылки на др. страницы-->
+        <ul class="act-pages">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about_us.html">О компании</a></li>
+          <li><a href="catalog.html">Каталог туров</a></li>
+          <li><a href="calculator.html">Рассчет туров</a></li>
+        </ul>
+
+        <!-- Контакты -->
+        <p class="cont">350051, г. Краснодар, ул. Монтажников, д. 12/2, 
+          2 этаж, офис 205<br>
+          +7 (900) 00 000 00<br>
+          +7 (901) 00 000 00<br>
+          +7 (902) 00 000 00<br>
+          info@lavion.ru</p>
+
+        <!-- Соц. сети -->
+        <div class="social-net">
+          <div class="socials">
+            <a class="social-icon" href="https://www.facebook.com/" 
+            target="_blank">
+              <img src="images/fb.png" alt="Facebook icon">
+            </a>
+          </div>
+          <div class="socials">
+            <a class="social-icon" href="https://www.instagram.com/" 
+            target="_blank">
+              <img src="images/inst.png" alt="Instagram icon">
+            </a>
+          </div>
+          <div class="socials">
+            <a class="social-icon" href="https://twitter.com/" target="_blank">
+              <img src="images/tw.png" alt="Twitter icon">
+            </a>
+          </div>
+        </div>
+        <p class="copyright">Туристическая компания L'Avion<br>2010 - 2021</p>
+      </div>
+    </div>
+  </body>
+</html>

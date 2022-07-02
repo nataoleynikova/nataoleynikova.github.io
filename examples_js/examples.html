@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <script src="examples.js"></script>
+  </head>
+
+  <body>
+    задание 1: увеличивать "int_inc" на 1
+      <br>
+      <div id="int_inc">100</div>
+      <button onclick="increment_int_1()">click</button>
+      <br><br>
+
+    задание 2: уменьшать "int_dec" на 1
+      <br>
+      <div id="int_dec">100</div>
+      <button onclick="decrement_int_2()">click</button>
+      <br><br>
+
+    задание 3: "int_inc" + "int_dec"
+      <br>
+      <div id="sum">0</div>
+      <button onclick="show_sum()">click</button>
+      <br><br>
+
+    задание 4: добавлять к слову 1 слово 2 при каждом клике
+      <br>
+      <div id="word1">im_word1</div>
+      <div id="word2">im_word2</div>
+      <button id="button" onclick="add_word()">click</button>
+      <div id="sum_words"></div>
+      <br><br>
+
+    задание 5: по кругу менять значение id:mode на
+    low/middle/high
+      <br>
+      <div id="mode">low</div>
+      <button onclick="change_word()">click</button>
+      <br><br>
+
+    задание 6:<br>
+    if mode = low: sum * 1<br>
+    if mode = middle: sum * 2<br>
+    if mode = high: sum * 3
+      <br>
+      <div id="multi">0</div>
+      <button onclick="change_sum()">click</button>
+      <br><br>
+    
+    задание 7: вывести четные числа от 0 и до заданного<br>
+      <input id="given_number_seven" type="number" value="" size="40" placeholder="Введите число">
+      <button onclick="test_circle()">click</button>
+      <div id="circle_id"></div>
+      <br><br>
+
+    задание 8.1: массивы: объединение массивов<br>
+      arr1 = [1, 2, 5];<br>
+      arr2 = [4, 5, 6];<br>
+      <button onclick="test_array()">click</button>
+      <div id="array"></div>
+      <br><br>
+
+      задание 8.2: массивы: вывести значения элементов по ключам<br>
+      arr = {pet: "собака", name: "Бобик", age: 4, paws: 4, ears: 2, tail: 1};<br>
+      <button onclick="keys_array()">click</button>
+      <div id="keys"></div>
+      <br><br>
+
+    задание 9: рекурсия: вычислить сумму до заданного<br>
+      <input id="given_number_nine" type="number" value="" size="40" placeholder="Введите число">
+      <button onclick="sum_to()">click</button>
+      <div id="recursion"></div>
+      <br><br>
+
+    задание 10: рекурсия: получение чисел Фибоначчи<br>
+      <input id="given_number_ten" type="number" value="" size="40" placeholder="Введите число">
+      <button onclick="get_numbers()">click</button>
+      <div id="fibonacci"></div>
+      <br><br>
+  </body>
+</html>

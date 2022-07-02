@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Туристическая компания L'Avion | Туры по всему миру</title>
+    <link rel="Stylesheet" href="css/calculator.css">
+    <link rel="Stylesheet" href="css/media.css">
+    <link rel="Stylesheet" href="css/header.css">
+    <link rel="Stylesheet" href="css/footer.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="calculator.js" defer></script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <!-- Шапка -->
+      <div id="header">
+        <div class="pages">
+          <li class="page"><a href="index.html">Главная</a></li>
+          <li class="page"><a href="about_us.html">О компании</a></li>
+          <li class="page"><a href="catalog.html">Каталог туров</a></li>
+          <li class="page"><a href="calculator.html">Рассчет туров</a></li>
+        </div>
+        <div class="title-calc">
+          <h2 class="title">Туристическая компания L'Avion - с нами Вы увидите 
+            весь мир!</h2>
+        </div>
+      </div>
+
+      <div class="container">
+        <div id="elem">
+          <select class="form-select" name="country" id="country">
+            <option selected>Выберите страну</option>
+            <option value="1000">Турция</option>
+            <option value="4000">Великобритания</option>
+            <option value="2000">Бразилия</option>
+          </select>
+        </div>
+        <div id="elem">
+          <input type="number" class="form-control" id="days"
+          placeholder="Введите количество дней:">
+        </div>
+        <div id="elem">
+          <input type="number" class="form-control" id="nights"
+          placeholder="Введите количество ночей:">
+        </div>
+        <div id="elem">
+          <input type="number" class="form-control" id="people"
+          placeholder="Сколько людей поедет:">
+        </div>
+        <div id="elem">
+          <button type="button" onclick="calc()">Рассчитать стоимость тура:</button>
+        </div>
+        <div id="result">0</div> 
+      </div>
+    
+      <!-- Подвал -->
+      <div class="footer-menu">
+        <div class="footer-container">
+
+          <!-- Активные ссылки на др. страницы-->
+          <ul class="act-pages">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about_us.html">О компании</a></li>
+            <li><a href="catalog.html">Каталог туров</a></li>
+            <li><a href="calculator.html">Рассчет туров</a></li>
+          </ul>
+
+          <!-- Контакты -->
+          <p class="cont">350051, г. Краснодар, ул. Монтажников, д. 12/2, 
+            2 этаж, офис 205<br>
+            +7 (900) 00 000 00<br>
+            +7 (901) 00 000 00<br>
+            +7 (902) 00 000 00<br>
+            info@lavion.ru</p>
+
+          <!-- Соц. сети -->
+          <div class="social-net">
+            <div class="socials">
+              <a class="social-icon" href="https://www.facebook.com/" 
+              target="_blank">
+                <img src="images/fb.png" alt="Facebook icon">
+              </a>
+            </div>
+            <div class="socials">
+              <a class="social-icon" href="https://www.instagram.com/" 
+              target="_blank">
+                <img src="images/inst.png" alt="Instagram icon">
+              </a>
+            </div>
+            <div class="socials">
+              <a class="social-icon" href="https://twitter.com/" target="_blank">
+                <img src="images/tw.png" alt="Twitter icon">
+              </a>
+            </div>
+          </div>
+          <p class="copyright">Туристическая компания L'Avion<br>2010 - 2021</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

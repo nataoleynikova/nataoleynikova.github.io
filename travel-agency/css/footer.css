@@ -1,0 +1,58 @@
+.footer-menu {
+  background-color: #353434;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.footer-menu ul li {
+  display: inline; 
+}
+
+.footer-menu ul li a {
+  color: white;
+  font-size: 15px;
+  font-style: italic;
+  margin-left: 20px;
+  text-decoration: none; 
+}
+
+.footer-menu ul li a:hover {
+  text-decoration: underline; 
+}
+
+.footer-container {
+  align-items: center;
+  display: grid;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%; 
+}
+
+.act-pages {
+  padding-inline-start: 0; 
+}
+
+.cont {
+  color: white;
+  font-size: 15px; 
+}
+
+.social-net {
+  align-items: center;
+  display: flex;
+  justify-content: center; 
+}
+
+.social-icon:hover {
+  bottom: 5px;
+  position: relative; 
+}
+
+.socials {
+  margin-right: 8px; 
+}
+
+.copyright {
+  color: white; 
+}
