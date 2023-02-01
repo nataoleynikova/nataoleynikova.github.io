@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="Stylesheet" href="css/calculator.css">
+    <link rel="Stylesheet" href="css/media.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="calculator.js" defer></script>
+  </head>
+
+  <body>
+    <div class="col-md probootstrap-animate">
+      <form action="#" class="probootstrap-form">
+        <div class="form-group">
+          
+          <div class="row mb-3">
+            
+            <div class="col-md">
+              <div class="form-group">
+                <label for="id_label_single">Страна</label>
+                <label for="id_label_single" style="width: 100%;">
+                  <select class="js-example-basic-single js-states form-control clean" name="country" id="country">
+                    <option value="1000">Турция</option>
+                    <option value="4000">Великобритания</option>
+                    <option value="2000">Бразилия</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+
+            <div class="col-md">
+              <div class="form-group">
+                <label for="id_label_single2">Сколько человек</label>
+                <div id="elem">
+                  <input type="number" class="form-control clean" id="people">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-5">
+            <div class="col-md">
+              <div class="form-group">
+                <label for="id_label_single3">Сколько дней</label>
+                <div id="elem">
+                  <input type="number" class="form-control clean" id="days">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md">
+              <div class="form-group">
+                <label for="id_label_single4">Сколько ночей</label>
+                <div id="elem">
+                  <input type="number" class="form-control clean" id="nights">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md">
+              <div id="elem">
+                <input type="button" onclick="calc()" value="Стоимость" class="btn btn-success btn-block">
+              </div>
+                <div class="result" id="result"></div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

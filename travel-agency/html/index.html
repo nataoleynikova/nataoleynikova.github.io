@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Туристическая компания L'Avion | Туры по всему миру</title>
+    
+    <link rel="Stylesheet" href="../css/bootstrap.min.css">
+    <link rel="Stylesheet" href="../css/helpers.css"> 
+    <link rel="Stylesheet" href="../css/main.css"> 
+
+    <link rel="Stylesheet" href="../css/index.css">
+    <link rel="Stylesheet" href="../css/header.css">
+    <link rel="Stylesheet" href="../css/footer.css">
+    <link rel="Stylesheet" href="../css/calculator.css">
+    <link rel="Stylesheet" href="../css/media.css">
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/waypoints.min.js"></script>
+    <script src="../js/select2.min.js"></script>
+    
+    <script src="../js/main.js"></script>
+    <script src="../js/calculator.js" defer></script>
+  </head>
+
+  <body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg navbar-dark probootstrap_navbar" id="probootstrap-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">L'Avion</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+          data-bs-target="#probootstrap-menu" aria-controls="probootstrap-menu"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <i class="ion-navicon"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="probootstrap-menu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active" aria-current="true"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="about_us.html">О компании</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог туров</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="probootstrap-cover overflow-hidden relative" data-stellar-background-ratio="0.5" id="section-home">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md tagline">
+            <h2 class="heading mb-2 display-4 font-light probootstrap-animate">С нами Вы увидите весь мир!</h2>
+          </div>
+
+          <!-- calculator -->
+          <div class="col-md probootstrap-animate">
+            <form action="#" class="probootstrap-form">
+              <div class="form-group">
+                
+                <div class="row mb-3">
+                  
+                  <div class="col-md">
+                    <div class="form-group">
+                      <label for="id_label_single">Страна</label>
+                      <label for="id_label_single" style="width: 100%;">
+                        <select class="js-example-basic-single js-states form-control clean" name="country" id="country">
+                          <option value="1000">Турция</option>
+                          <option value="4000">Великобритания</option>
+                          <option value="2000">Бразилия</option>
+                        </select>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col-md">
+                    <div class="form-group">
+                      <label for="id_label_single2">Сколько человек</label>
+                      <div id="elem">
+                        <input type="number" class="form-control clean" id="people">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mb-5">
+                  <div class="col-md">
+                    <div class="form-group">
+                      <label for="id_label_single3">Сколько дней</label>
+                      <div id="elem">
+                        <input type="number" class="form-control clean" id="days">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md">
+                    <div class="form-group">
+                      <label for="id_label_single4">Сколько ночей</label>
+                      <div id="elem">
+                        <input type="number" class="form-control clean" id="nights">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md">
+                    <div id="elem">
+                      <input type="button" onclick="calc()" value="Стоимость" class="btn btn-success btn-block">
+                    </div>
+                      <div class="result" id="result"></div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- end -->
+          
+        </div>
+      </div>
+    </section>
+    <!-- end -->
+
+    <!-- description -->
+    <section class="probootstrap_section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-12 text-center ms-5 probootstrap-animate">
+            <h2 class="display-4 border-bottom probootstrap-section-hidden">Почему мы?</h2>
+            <p class="lead mb-4">Туристическая компания L'Avion - это гарант качественного отдыха.<br>
+              Снежные вершины, песчаные пляжи, дикие джунгли - с нами Вы сможете 
+              отправиться в любом направлении и в любую страну мира. Морские и 
+              речные круизы, оздоровительные курорты, познавательные туры для детей 
+              и взрослых, культурные ценности и памятники природы - выбор туров 
+              огромен!<br>
+              Опытные специалисты нашей турфирмы найдут для вас прекрасный отель, 
+              который будет полностью отвечать ожиданиям, помогут оформить документы
+              и решить все организационные вопросы.<br>
+              И пусть весь мир расстелится у Ваших ног!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end -->
+  
+    <!-- countries -->
+    <section class="probootstrap_section" id="section-city-guides">
+      <div class="container">
+        <div class="row text-center mb-5 probootstrap-animate">
+          <div class="col-md-12">
+            <h2 class="display-4 border-bottom probootstrap-section-heading">Какие направления мы предлагаем</h2>
+          </div>
+        </div>
+      
+        <div class="row first_row">
+          <div class="col-lg-3 col-md-6 probootstrap-animate mb-3">
+            <a href="catalog.html#europe" class="probootstrap-thumbnail">
+              <img src="../images/europe.jpg" alt="Europe" class="img-fluid rounded">
+              <div class="probootstrap-text">
+                <h3>Европа</h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 probootstrap-animate mb-3">
+            <a href="catalog.html#n_america" class="probootstrap-thumbnail">
+              <img src="../images/america.jpg" alt="North America" class="img-fluid rounded">
+              <div class="probootstrap-text">
+                <h3>Северная Америка</h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 probootstrap-animate mb-3">
+            <a href="catalog.html#l_america" class="probootstrap-thumbnail">
+              <img src="../images/l-america.jpg" alt="Latin America" class="img-fluid rounded">
+              <div class="probootstrap-text">
+                <h3>Латинская Америка</h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 probootstrap-animate mb-3">
+            <a href="catalog.html#asia" class="probootstrap-thumbnail">
+              <img src="../images/asia.jpg" alt="Asia" class="img-fluid rounded">
+              <div class="probootstrap-text">
+                <h3>Азия</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6 probootstrap-animate mb-3">
+            <a href="catalog.html#africa" class="probootstrap-thumbnail">
+              <img src="../images/africa.jpg" alt="Africa" class="img-fluid rounded">
+              <div class="probootstrap-text">
+                <h3>Африка</h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 probootstrap-animate mb-3">
+            <a href="catalog.html#russia" class="probootstrap-thumbnail">
+              <img src="../images/russia.jpg" alt="Russia" class="img-fluid rounded">
+              <div class="probootstrap-text">
+                <h3>Россия</h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 probootstrap-animate mb-3">
+            <a href="catalog.html#australia" class="probootstrap-thumbnail">
+              <img src="../images/australia.jpg" alt="Australia" class="img-fluid rounded">
+              <div class="probootstrap-text">
+                <h3>Австралия и Океания</h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 probootstrap-animate mb-3">
+            <a href="catalog.html#exotic" class="probootstrap-thumbnail">
+              <img src="../images/exotic.jpg" alt="Exotic tours" class="img-fluid rounded">
+              <div class="probootstrap-text">
+                <h3>Эксклюзивные направления</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end -->
+
+    <!-- footer -->
+    <footer class="probootstrap_section">
+      <div class="contaner">
+        <div class="row">
+          <div class="col-lg-3  col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+              <h3 class="footer_title">Контакты</h3>
+              <p>350051, г. Краснодар, ул. Монтажников, д. 12/2, 
+                2 этаж, офис 205<br>
+                +7 (900) 00 000 00<br>
+                +7 (901) 00 000 00<br>
+                +7 (902) 00 000 00<br>
+                info@lavion.ru</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+              <h3 class="footer_title">Навигация</h3>
+              <div class="row">
+                <div class="col-4">
+                  <ul class="list_style">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about_us.html">О компании</a></li>
+                    <li><a href="catalog.html">Каталог туров</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+              <h3 class="footer_title">Рассылка</h3>
+              <div id="mc_embed_signup">
+                <form target="_blank" method="get" class="subscribe_form relative">
+                  <div class="input-group d-flex flex-row">
+                    <input name="EMAIL" placeholder="Введите email" onfocus="this.placeholder = ''" 
+                      onblur="this.placeholder = 'Введите email'" required="" type="email">
+                    <button class="btn sub-btn"></button>
+                  </div>									
+                </form>                                                                          		
+              </div>                					
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+              <h3 class="footer_title">Социальные сети</h3>
+              <div class="row">
+                <div class="footer-social">                  
+                  <a href="https://www.instagram.com" target="_blank">
+                    <img src="../images/inst.png" alt="Instagram icon">
+                  </a>                
+                  <a href="https://www.twitter.com/" target="_blank">
+                    <img src="../images/tw.png" alt="Twitter icon">
+                  </a>                
+                  <a href="https://www.facebook.com/" target="_blank">
+                    <img src="../images/fb.png" alt="Facebook icon">
+                  </a>                
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="border_line"></div>
+
+          <div class="row footer-bottom">
+            <p class="footer-text">
+              <script>document.write(new Date().getFullYear());</script> 
+              Туристическая компания L'Avion
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end -->
+
+  </body>
+</html>

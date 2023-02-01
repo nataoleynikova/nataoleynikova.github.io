@@ -1,47 +1,106 @@
-font-face {
-  font-family: "Caveat";
-  src: url("../fonts/Caveat/static/Caveat-Regular.ttf") format("TrueType"); 
-}
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 
-body {
-  background-image: url(../images/background.jpg);
-  margin: 0; 
-}
-
-.description {
-  margin: 0 0 0 15px; 
-}
-
-.second-title {
-  font: oblique 25px Caveat, serif; 
-}
-
-.text-ind {
-  border-width: 3px 7px 7px 4px;
-  border-style: double;
-  margin: 0 0 0 30px;
-  padding: 7px; 
-}
-
-.container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center; 
-}
-
-.country {
-  margin: 30px 15px 0 15px;
+.with-overlay {
   position: relative; 
 }
 
-.label {
-  background: none;
-  box-sizing: border-box;
-  color: #fff;
-  font-size: 20px;
-  margin: 0;
-  padding: 30px 12px 5px 12px;
-  position: absolute;
-  right: 0;
-  top: 0; 
+  .with-overlay:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background: rgba(0, 0, 0, 0.4); 
+  }
+
+.border-bottom {
+  display: block;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px; 
 }
+
+  .border-bottom:after {
+    width: 50px;
+    height: 2px;
+    background: #00CA4C;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); 
+  }
+
+.probootstrap-animate {
+  opacity: 0;
+  visibility: hidden; 
+}
+
+.probootstrap-thumbnail {
+  position: relative;
+  display: block;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+  opacity: 1; 
+  text-decoration: none;
+}
+
+  .probootstrap-thumbnail.sleep {
+    opacity: .5; 
+  }
+  
+  .probootstrap-thumbnail img {
+    position: relative;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    display: block;
+    bottom: 0;
+    z-index: 2; 
+    width: 330px;
+    height: 248px;
+  }
+
+  .probootstrap-thumbnail h3 {
+    z-index: 1;
+    display: block;
+    text-align: center;
+    position: relative;
+    -webkit-transition: .2s all ease;
+    -o-transition: .2s all ease;
+    transition: .2s all ease;
+    opacity: 0;
+    visibility: hidden;
+    bottom: 30px; 
+    font-family: 'Neucha', cursive;
+    color: #000;
+  }
+  
+    .probootstrap-thumbnail:hover h3 {
+      opacity: 1;
+      visibility: visible;
+      bottom: -20px; 
+    }
+    
+    .probootstrap-thumbnail:hover img {
+      -webkit-transform: scale(1.08);
+      -ms-transform: scale(1.08);
+      transform: scale(1.08);
+      bottom: 20px;
+      -webkit-box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2); 
+    }
+
+.probootstrap_section {
+  padding: 7em 0;
+  float: left;
+  width: 100%; 
+}
+
+  .probootstrap_section.bg-light {
+    background: #ECECEC !important; 
+  }

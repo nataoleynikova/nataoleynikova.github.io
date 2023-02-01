@@ -1,41 +1,11 @@
-@charset "UTF-8";
-body {
-  background-image: url(../images/background.jpg);
-  margin: 0; }
+.section-gap{
+  padding: 120px 0;
+}
 
-.info-one, .info-two {
-  display: flex;
-  justify-content: space-evenly; }
+  .about-info-area .col-lg-6 {
+    padding: 0 20px;
+  }
 
-.info-one {
-  margin: 30px 0 0 0; }
-
-.info {
-  text-align: justify;
-  width: 30%; }
-
-.img {
-  position: relative; }
-
-/* Заголовки */
-.second-title {
-  font-style: oblique;
-  margin: 0;
-  padding-bottom: 10px;
-  text-align: center; }
-
-.info-two {
-  margin: 30px 0 30px 0; }
-
-.text {
-  font-size: 16px;
-  margin: 10px 0 0 0; }
-
-/* Цитата */
-.quote {
-  border-bottom: 1px solid #020202;
-  border-top: 1px solid #020202;
-  font: large italic;
-  margin: 60px 0 60px 0;
-  padding: 7px;
-  text-align: center; }
+  .about-info-area .info-left img {
+    width: 100%;
+  }

@@ -1,47 +1,140 @@
-font-face {
-  font-family: Brygada_1918;
-  src: url("../fonts/Brygada_1918/static/Brygada1918-Bold.ttf"); 
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+
+.navbar-brand {
+  text-transform: uppercase;
+  letter-spacing: .3em; 
+  font-weight: bold; 
+  font-family: 'Shadows Into Light', cursive;
 }
 
-#header {
-  background-color: #353434;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+.navbar-toggler span i {
+  font-size: 30px; 
+}
+
+.probootstrap_navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   width: 100%; 
 }
+  
+  .probootstrap_navbar .nav-item .nav-link {
+    padding: 1.6em 1em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 400; 
+  }
+    
+    .probootstrap_navbar .nav-item .nav-link.active {
+      color: #fff; 
+    }
 
-.pages {
-  margin: 0 0 0 0;
-  padding: 0 0 15px 15px; 
+  .probootstrap_navbar.scrolled {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin-top: -130px; 
+  }
+  
+    .probootstrap_navbar.scrolled .nav-item .nav-link {
+      padding: .5em 1em; 
+    }
+    
+    .probootstrap_navbar.scrolled.awake {
+      margin-top: 0px;
+      -webkit-transition: .3s all ease-out;
+      -o-transition: .3s all ease-out;
+      transition: .3s all ease-out; 
+    }
+    
+    .probootstrap_navbar.scrolled.sleep {
+      -webkit-transition: .3s all ease-out;
+      -o-transition: .3s all ease-out;
+      transition: .3s all ease-out; 
+    }
+
+.bg_image, .probootstrap-section-half .probootstrap-image {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; 
 }
 
-.page {
-  display: inline; 
+.probootstrap-animated {
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
-.page a {
-  color: #fbfcfd;
-  font: italic 15px Montserrat, sans-serif;
-  margin: 0 50px 0 0;
-  text-decoration: none;
-  width: 50px; 
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: none;
+    transform: none;
+  }
 }
 
-.page a:hover {
-  text-decoration:underline;
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
 }
 
-.title {
-  color: #fbfcfd;
-  font: 20px Brygada_1918, serif;
-  padding: 0 0 0 15px;
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }
 
-.calculator {
-  align-items: flex-end;
-  box-sizing: content-box;
-  color: #fbfcfd;
-  display: flex;
-  flex-direction: row; 
+.probootstrap-cover {
+  background-image: url('../images/bg_1.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 7em 0; 
 }
+
+  .probootstrap-cover .overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+  }
+
+  .probootstrap-cover a:hover {
+    color: #fff; 
+  }
+
+  .probootstrap-cover h2 {
+    color: #fff; 
+    font-family: 'Caveat', cursive;
+  }
+
+  .probootstrap-cover > .container > .row {
+    padding: 7em 0; 
+  }
+    

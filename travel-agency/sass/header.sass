@@ -1,47 +1,41 @@
-font-face
-  font-family: Brygada_1918
-  src: url("../fonts/Brygada_1918/static/Brygada1918-Bold.ttf")
+.navbar-brand
+  text-transform: uppercase
+  letter-spacing: .3em
+  font-weight: bold
+  font-family: 'Shadows Into Light', cursive
 
-header
-  background-color: rgb(53, 52, 52)
-  display: flex
-  flex-direction: column
-  height: 100%
+.navbar-toggler span i
+  font-size: 30px
+
+.probootstrap_navbar
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 1000
   width: 100%
-
-.pages
-  margin: 0 0 0 0
-  padding: 0 0 15px 15px
-
-$var1: #fbfcfd
-
-.page
-  display: inline
-  
-  a
-    color: $var1
-    font: italic 15px Montserrat, sans-serif
-    margin: 0 50px 0 0
-    text-decoration:none
-    width: 50px
-    
-    &:hover
-      text-decoration:underline
-
-.title-calc
-  background-image: url(../images/background_header.jpg)
-  background-size: cover
-  height: 100%
-  padding: 0 0 0 15px
-
-.title
-  color: $var1
-  font: 20px Brygada_1918, serif
-  margin: 20px 0 0 0
-
-.calculator 
-  align-items: flex-end
-  box-sizing: content-box
-  color: $var1
-  display: flex
-  flex-direction: row
+  .nav-item .nav-link 
+    padding: 1.6em 1em
+    font-size: 12px
+    text-transform: uppercase
+    letter-spacing: .1em
+    font-weight: 400
+    .active
+      color: #fff
+  .scrolled
+    background: rgba(0, 0, 0, 0.8)
+    position: fixed
+    right: 0
+    left: 0
+    top: 0
+    margin-top: -130px
+    .nav-item .nav-link
+      padding: .5em 1em
+    .awake
+      margin-top: 0px
+      -webkit-transition: .3s all ease-out
+      -o-transition: .3s all ease-out
+      transition: .3s all ease-out
+    .sleep 
+      -webkit-transition: .3s all ease-out
+      -o-transition: .3s all ease-out
+      transition: .3s all ease-out

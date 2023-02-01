@@ -1,43 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap')
+
+html
+  overflow-x: hidden
+  font-size: 1em
+
 body
-  background-image: url(../images/background.jpg)
-  margin: 0
+  font-family: "Work Sans", Arial, sans-serif
 
-%info-shared
-  display: flex
-  justify-content: space-evenly
+input, textarea, p
+  font-weight: 300
 
-.info-one
-  @extend %info-shared
-  margin: 30px 0 0 0
+::-moz-selection
+  background: #000
+  color: #fff
 
-.info
-  text-align: justify
-  width: 30%
+::selection
+  background: #000
+  color: #fff
 
-.img
-  position: relative
+h1, h2, h3, h4, h5, h6
+  font-weight: 300 !important
 
-/* Заголовки */
-.second-title
-  font-style: oblique
-  margin: 0
-  padding-bottom: 10px
-  text-align: center
+a
+  -webkit-transition: .3s all ease
+  -o-transition: .3s all ease
+  transition: .3s all ease
 
-.info-two
-  @extend %info-shared
-  margin: 30px 0 30px 0
+.bg_image, .probootstrap-section-half .probootstrap-image
+  background-size: cover
+  background-position: center center
+  background-repeat: no-repeat
 
-.text
-  font-size: 16px
-  margin: 10px 0 0 0
+.probootstrap-animated
+  -webkit-animation-duration: .8s
+  animation-duration: .8s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
 
-/* Цитата */
-$var1: 1px solid #020202
-.quote
-  border-bottom: $var1
-  border-top: $var1
-  font: large italic
-  margin: 60px 0 60px 0
-  padding: 7px
-  text-align: center
+@-webkit-keyframes fadeInUp
+  from
+    opacity: 0
+    visibility: hidden
+    -webkit-transform: translate3d(0, 40px, 0)
+    transform: translate3d(0, 40px, 0)
+
+  to
+    opacity: 1
+    visibility: visible
+    -webkit-transform: none
+    transform: none
+
+@keyframes fadeInUp
+  from
+    opacity: 0
+    visibility: hidden
+    -webkit-transform: translate3d(0, 40px, 0)
+    transform: translate3d(0, 40px, 0)
+
+  to
+    visibility: visible
+    opacity: 1
+    -webkit-transform: none
+    transform: none
+
+.fadeInUp
+  -webkit-animation-name: fadeInUp
+  animation-name: fadeInUp
+
+.probootstrap-cover
+  background-image: url('../images/bg_1.jpg')
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+  padding: 7em 0
+
+  .probootstrap-cover .overlay
+    position: absolute
+    background: rgba(0, 0, 0, 0.5)
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+
+  .probootstrap-cover a:hover
+    color: #fff
+
+  .probootstrap-cover h2
+    color: #fff
+    font-family: 'Caveat', cursive
+
+  .probootstrap-cover > .container > .row
+    padding: 7em 0
+
+.section-gap
+  padding: 120px 0
+
+  .about-info-area .col-lg-6
+    padding: 0 20px
+
+  .about-info-area .info-left img
+    width: 100%

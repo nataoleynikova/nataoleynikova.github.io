@@ -1,39 +1,171 @@
-font-face
-  font-family: "Caveat"
-  src: url('../fonts/Caveat/static/Caveat-Regular.ttf') format('TrueType')
+html
+  overflow-x: hidde
+  font-size: 1em
 
 body
-  background-image: url(../images/background.jpg)
-  margin: 0
+  font-family: "Work Sans", Arial, sans-serif
 
-.description
-  margin: 0 0 0 15px
+input, textarea, p
+  font-weight: 300
 
-.second-title
-  font: oblique 25px Caveat, serif
+::-moz-selection 
+	background: #000
+	color: #fff
 
-.text-ind
-  border-width: 3px 7px 7px 4px
-  border-style: double
-  margin: 0 0 0 30px
-  padding: 7px
-
-.container
-  display: flex
-  flex-flow: row wrap
-  justify-content: center
-
-.country
-  margin: 30px 15px 0 15px
-  position: relative
-
-.label
-  background: none
-  box-sizing: border-box
+::selection
+  background: #000
   color: #fff
-  font-size: 20px
-  margin: 0
-  padding: 20px 12px 5px 12px
-  position: absolute
-  right: 0
-  top: 0
+
+h1, h2, h3, h4, h5, h6
+  font-weight: 300 !important
+
+a
+  -webkit-transition: .3s all ease
+  -o-transition: .3s all ease
+  transition: .3s all ease
+
+.bg_image, .probootstrap-section-half .probootstrap-image
+  background-size: cover
+  background-position: center center
+  background-repeat: no-repeat
+
+.probootstrap-animated
+  -webkit-animation-duration: .8s
+  animation-duration: .8s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+
+-webkit-keyframes fadeInUp 
+	opacity: 0
+	visibility: hidden
+	-webkit-transform: translate3d(0, 40px, 0)
+	transform: translate3d(0, 40px, 0)
+
+	opacity: 1
+	visibility: visible
+	-webkit-transform: none
+	transform: none
+
+keyframes fadeInUp 
+  opacity: 0
+  visibility: hidden
+  -webkit-transform: translate3d(0, 40px, 0)
+  transform: translate3d(0, 40px, 0)
+
+  visibility: visible
+  opacity: 1
+  -webkit-transform: none
+  transform: none
+
+.fadeInUp 
+  -webkit-animation-name: fadeInUp
+  animation-name: fadeInUp
+
+.probootstrap-cover
+  background-image: url('../images/bg_1.jpg')
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+  padding: 7em 0
+  .overlay 
+    position: absolute
+    background: rgba(0, 0, 0, 0.5)
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+  a:hover
+    color: #fff
+  h2
+  color: #fff
+  font-family: 'Caveat', cursive
+  > .container > .row
+    padding: 7em 0
+  
+.with-overlay 
+  position: relative
+  &:before
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    content: ""
+    background: rgba(0, 0, 0, 0.4)
+
+.border-bottom
+  display: block
+  position: relative
+  padding-bottom: 20px
+  margin-bottom: 20px
+  &:after 
+    width: 50px
+    height: 2px
+    background: #00CA4C
+    position: absolute
+    content: ""
+    bottom: 0
+    left: 50%
+    -webkit-transform: translateX(-50%)
+    -ms-transform: translateX(-50%)
+    transform: translateX(-50%)
+
+.probootstrap-animate
+  opacity: 0
+  visibility: hidden
+
+// #section-city-guides
+//   border-top: 1px solid #e6e6e6
+//   border-bottom: 1px solid #e6e6e6
+
+.probootstrap-thumbnail
+  position: relative
+  display: block
+  -webkit-transition: .3s all ease
+  -o-transition: .3s all ease
+  transition: .3s all ease
+  opacity: 1
+  text-decoration: none
+  .sleep
+    opacity: .5
+  img
+    position: relative
+    -webkit-transition: .3s all ease
+    -o-transition: .3s all ease
+    transition: .3s all ease
+    display: block
+    bottom: 0
+    z-index: 2
+    width: 330px
+    height: 248px
+  h3
+    z-index: 1
+    display: block
+    text-align: center
+    position: relative
+    -webkit-transition: .2s all ease
+    -o-transition: .2s all ease
+    transition: .2s all ease
+    opacity: 0
+    visibility: hidden
+    bottom: 30px
+    font-family: 'Neucha', cursive
+    color: #000
+    &:hover h3
+      opacity: 1
+      visibility: visible
+      bottom: -20px
+    &:hover img
+      -webkit-transform: scale(1.08)
+      -ms-transform: scale(1.08)
+      transform: scale(1.08)
+      bottom: 20px
+      -webkit-box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2)
+      box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2) 
+
+.probootstrap_section
+  padding: 7em 0
+  float: left
+  width: 100%
+  .bg-light
+    background: #ECECEC !important

@@ -1,155 +1,148 @@
 @charset "UTF-8";
-/* Адаптивность от 600 до 900px */
-@media (max-width: 900px) {
-  /* Для страницы about_us */
-  .rightimg {
-    height: auto;
-    float: right;
-    max-width: 400px;
-    width: auto; 
-  }
-
-  .leftimg {
-    height: auto;
-    float: left;
-    max-height: 370px;
-    max-width: 350px;
-    width: auto; 
-  }
-}
-/* Адаптивность на 600px и меньше */
-@media (max-width: 600px) {
-  /* Шапка */
-  .page {
-    margin: 0; 
-  }
-  
-  .title {
-    font-size: medium;
-    margin-bottom: 0;
-    padding: 0; 
-  }
-  
-  /* Подвал */
-  .footer-container {
-    justify-content: flex-end; 
-  }
-  
-  /* Для страницы index */
-  .description {
-    margin: 0 0 0 15px;
-    max-width: 100%; 
-  }
-  
-  .text-ind {
-    margin: 0 15px 0 0; 
-  }
-  
-  .country {
-    display: flex;
-    margin: 30px 0 0 0; 
-  }
-  
-  .img {
-    height: auto;
-    width: 400px; 
-  }
-  
-  /* Для страницы about_us */
-  .info-one, .info-two {
-    display: flex;
-    flex-direction: column; 
-  }
-  
-  .info-one {
-    margin: 0 15px 15px 15px; 
-  }
-  
-  .info {
-    margin-bottom: 15px;
-    padding-top: 15px;
-    width: 100%; 
-  }
-  
-  .info-two {
-    margin: 15px 15px 0 15px; 
-  }
-  
-  .text {
-    font-size: 16px; 
-  }
-  
-  /* Для страницы catalog */
-  .countries {
-    margin: 0 0 15px 0; 
-  } 
-}
-
-/* Адаптивность на 450px и меньше */
+/* < 450px */
 @media (max-width: 450px) {
-  /* Шапка */
-  .page a {
-    margin: 0 20px 0 0; 
+
+  /* footer */
+  footer.probootstrap_section {
+    padding: 70px 12px;
   }
-  
-  /* Для страницы index*/
-  .description {
-    margin: 0; 
+
+  .single-footer-widget {
+    margin-bottom: 46px;
   }
-  
-  .text-ind {
-    margin: 0; 
-  }
-  
-  .img {
-    height: 240px;
-    width: 100%; 
-  }
-  
-  .label {
-    font-size: 15px; 
-  }
-  
-  /* Для страницы catalog */
-  a {
-    font-weight: normal; 
-  } 
+
+    .single-footer-widget ul {
+      margin-bottom: 0;
+    }
+
+      .single-footer-widget ul li a {
+        margin-bottom: 0;
+      }
 }
 
-/* Адаптивность на 1400px и больше */
-@media (min-width: 1400px) {
-  /* Для страницы index*/
-  .text-ind {
-    width: 70%; 
+/* < 600px */
+@media (max-width: 600px) {
+
+  /* index */
+  p {
+    font-size: 16px !important;
   }
-  
-  .container, .countries {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center; 
+
+  .probootstrap-cover {
+    margin-bottom: 70px;
   }
-  
-  /* Для страницы about_us */
-  .info {
-    padding-top: 40px; 
+
+  .probootstrap-cover > .container > .row {
+    padding-top: 50px;
   }
-  
-  .text {
-    font-size: 18px; 
+
+    .probootstrap-cover h2 {
+      padding-bottom: 100px;  
+      /* text-align: center; */
+    }
+
+  .probootstrap_section {
+    padding: 0 0 70px 0;
   }
-  
-  /* Для страницы catalog */
-  .countries {
-    margin: 30px 0 30px 15px; 
-  }
-  
-  h3 {
-    padding: 0 0 0 20px; 
-  }
-  
-  ul li {
+    .probootstrap_section > .container > .row {
+      margin-bottom: 0px !important;
+    }
+
+      .probootstrap_section > .container > .row > .col-md-12 {
+        margin: 0 !important;
+      }
+
+        .probootstrap_section > .container > .row > .col-md-12 > h2 {
+          font-size: 28px !important;
+        }
+
+        .probootstrap_section > .container > .row > .col-md-12 > .lead {
+          margin: 0 !important;
+        }
+
+  #section-city-guides > .container > .row > .col-lg-3 > a > img {
     display: block;
-    padding: 5px 0 0 10px;
-    position: relative; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .probootstrap-thumbnail h3 {
+    opacity: 1;
+    visibility: visible;
+    bottom: 0;
+    margin-top: 10px; 
   } 
+  
+    .probootstrap-thumbnail:hover h3 {
+      bottom: 0px; 
+    } 
+
+  .probootstrap-thumbnail:hover img {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); 
+    bottom: 0px;
+    opacity: 1;
+    visibility: visible; 
+  } 
+
+  /* calculator */
+  .probootstrap-form > .form-group > .row {
+    margin-bottom: 0 !important;
+  }
+
+    .probootstrap-form > .form-group > .row > .col-md {
+      margin-bottom: 10px;
+    }
+
+      .probootstrap-form > .form-group > .row > .col-md > .form-group {
+        width: 100%;
+      }
+  
+  /* footer */
+  footer.probootstrap_section {
+    padding: 70px 42px;
+  }
+
+  .single-footer-widget {
+    margin-bottom: 46px;
+  }
+
+    .single-footer-widget p {
+      font-size: 14px !important;
+    }
+
+    .single-footer-widget > .row > .col-4 {
+      width: 100%;
+    }
+
+      .single-footer-widget ul li a {
+        margin-bottom: 0;
+      }
 }
+
+@media (max-width: 991px) {
+  /* header */
+  .probootstrap_navbar {
+    background: rgba(0, 0, 0, 0.6); 
+  } 
+
+    .probootstrap_navbar .nav-item .nav-link {
+      padding: .5em 0; 
+    } 
+
+  /* index */
+  .probootstrap_section > .container > .row > .col-md-12 > h2 {
+    font-size: 45px !important;
+  }
+
+  /* calculator */
+  .probootstrap-form {
+    width: 380px;
+  }
+
+  /* about_us */
+  .about-info-area .info-left {
+    margin-bottom: 50px;
+  }
+} 
