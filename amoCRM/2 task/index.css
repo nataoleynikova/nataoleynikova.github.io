@@ -1,0 +1,251 @@
+/* inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+/* montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* support */
+h1 {
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 16px;
+}
+
+h2, span {
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #656566;
+}
+
+h3 {
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 16px;
+}
+
+h4 {
+	font-family: 'Inter';
+	font-weight: 900;
+	font-size: 48px;
+}
+
+p, a {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	font-size: 12px;
+}
+
+.visible {
+	display: none;
+}
+/* end */
+
+body {
+	margin: 0;
+	padding: 46px 150px 20px 150px;
+	background-image: url(images/background.svg);
+}
+
+/* header */
+header {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+}
+
+.logo {
+	display: flex;
+	flex-direction: column;
+}
+
+	.logo > p {
+		font-family: 'Montserrat';
+		font-weight: 300;
+		font-size: 10px;
+		width: 165px;
+	}
+
+.navigation {
+	display: flex;
+	flex-direction: row;
+}
+
+.navigation > h1 {
+	margin: 0 0 0 30px;
+}
+
+header > h1 {
+	margin: 0 0 0 137px;
+}
+
+.social-networks {
+	display: flex;
+	margin: 0 0 0 48px;
+	width: 117px;
+	justify-content: space-between;
+}
+
+	.social-networks > img {
+		width: 17px;
+		height: 16px;
+	}
+/* end */
+
+/* main */
+.container {
+	margin: 94px 0px 124px 0px;
+	display: flex;
+	justify-content: space-between;
+}
+
+	.container > div > h3 {
+		font-size: 48px;
+		width: 362px;
+		margin: 0;
+	}
+
+	.container > div > h4 {
+		margin: 0;
+		/* background-color: #FF3F78; */
+		background-image: linear-gradient(92deg, #FCB045, #FF3F78);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.container > div > p {
+		font-size: 18px;
+		width: 275px;
+		margin: 30px 0 0 0;
+	}
+
+.cont-right {
+	text-align: right;
+	width: 291px;
+}
+
+	.cont-right > h1 {
+		font-size: 18px;
+		margin: 0;
+	}
+
+		.cont-right > h1 > span {
+			font-size: 18px;
+			margin: 0;
+			background-image: linear-gradient(92deg, #FCB045 27.14%, #FD1D1D 121.36%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+
+	.cont-right > div {
+		display: flex;
+		margin: 10px 0 0 0;
+	}
+
+		.cont-right > div > div {
+			display: flex;
+			flex-direction: column;
+		}
+
+			.cont-right > div > div > .hidden {
+				margin: 30px 0 0 0;
+			}
+
+				.cont-right > div > div > .hidden > h1 {
+					font-size: 18px;
+					text-transform: uppercase;
+					margin: 0;
+				}
+
+				.cont-right > div > div > .hidden > p {
+					font-size: 16px;
+					margin: 6px 0 0 0;
+				}
+
+button {
+	margin: 61px 0 0 0;
+	width: 262px;
+	height: 61px;
+	background-color: #4077F3;
+}
+/* end */
+
+/* footer */
+footer {
+	display: flex;
+	flex-direction: column;
+}
+
+.navbar-footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+	.navbar-footer > div > div {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		margin: 20px 0 0 0;
+	}
+
+		.navbar-footer > div > h2 {
+			margin: 0;
+		}
+
+		.navbar-footer > div > div > h3 {
+			margin: 0 52px 10px 0;
+		}
+
+.menu > div {
+	height: 145px;
+}
+
+.menu > .visible {
+	display: none;
+}
+
+.contacts {
+	text-align: right;
+}
+
+	.contacts > div > h1 {
+		margin: 0;
+	}
+
+	.contacts > div > div {
+		margin: 22px 0 24px 0;
+	}
+
+		.contacts > div > div > img {
+			width: 17px;
+			height: 14px;
+			margin: 0 0 0 14px;
+		}
+
+.contacts > h3 {
+	margin: 0;
+}
+
+.rights {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	margin: 33px 0 0 0;
+}
+
+	.rights > p {
+		text-align: right;
+		margin: 0 0 5px 0;
+	}
+
+	.rights > a {
+		text-align: right;
+		color: #E4E5EA;
+		text-decoration: underline;
+	}
+/* end */

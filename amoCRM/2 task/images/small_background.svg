@@ -1,0 +1,46 @@
+<svg version="1.1"
+	baseProfile="full"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:ev="http://www.w3.org/2001/xml-events"
+	width="320" height="445"
+	viewBox="0 0 320 445">
+	
+	<style>
+		.purple-light {
+			opacity: 0.5;
+			filter: blur(196px);
+		}
+		
+		.purple-ball {
+			background: radial-gradient();
+			box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+			filter: blur(5px);
+			backdrop-filter: blur(2px);
+		}
+
+		.red-light {
+			opacity: 0.5;
+			filter: blur(196px);
+		}
+
+		.red-ball {
+			background: radial-gradient();
+			box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+			filter: blur(5px);
+			backdrop-filter: blur(2px);
+		}
+	</style>
+
+	<g>
+		<rect x="0" y="0" width="320px" height="445px" fill="#0E1014" />
+		
+		<circle class="purple-light" cx="390" cy="236.5" r="129.5" fill="#833AB4" />
+	
+		<circle class="purple-ball" cx="318" cy="256" r="20" fill="#ECD0FFA3"/>
+	
+		<circle class="red-light" cx="58" cy="346" r="105" fill="#961A1A" />
+	
+		<circle class="red-ball" cx="50.5" cy="423.5" r="21.5" fill="#FFD0D089" />
+	</g>
+</svg>

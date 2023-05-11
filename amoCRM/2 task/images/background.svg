@@ -1,0 +1,57 @@
+<svg version="1.1"
+	baseProfile="full"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:ev="http://www.w3.org/2001/xml-events"
+	width="1440" height="980"
+	viewBox="0 0 1440 980">
+	
+	<style>
+		.purple-light {
+			opacity: 0.5;
+			filter: blur(196px);
+		}
+
+		.purple-ball {
+			background: radial-gradient(64% at 27.25%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, 
+				rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%);
+			box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+			filter: blur(5px);
+			backdrop-filter: blur(2px);
+		}
+
+		.red-ball {
+			background: radial-gradient();
+			box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+			filter: blur(5px);
+			backdrop-filter: blur(2px);
+		}
+
+		.red-light {
+			background: #961A1A;
+			opacity: 0.5;
+			filter: blur(196px);
+		}
+
+		.small-red-ball {
+			background: radial-gradient();
+			box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+			filter: blur(2.5px);
+			backdrop-filter: blur(2px);
+		}
+	</style>
+
+	<g>
+		<rect x="0" y="0" width="1440px" height="980px" fill="#0E1014" />
+		
+		<circle class="purple-light" cx="731.5" cy="-30" r="129.5" fill="#833AB4" />
+	
+		<circle class="purple-ball" cx="898" cy="32" r="30" fill="#ECD0FFA3"/>
+	
+		<circle class="red-ball" cx="560.5" cy="124.5" r="41.5" fill="#A731313F" />
+	
+		<circle class="red-light" cx="53.5" cy="406.5" r="155.5" fill="#961A1A" />
+		
+		<circle class="small-red-ball" cx="865" cy="561" r="14" fill="#D45D5D3F" />
+ 	</g>
+</svg>
