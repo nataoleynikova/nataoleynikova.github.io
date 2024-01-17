@@ -51,31 +51,25 @@
 	body {
 		margin: 0;
 		padding: 20px 16px 60px 16px;
-		background-image: none;
 		background-color: #0E1014;
+		background-image: url(images/small_background.svg);
+		background-size: cover;
 	}
 
 	/* header */
 	header {
 		display: flex;
 		flex-direction: column;
-		align-items: baseline;
+		align-items: start;
 	}
 
-	.navigation {
-		display: flex;
-		flex-direction: row;
+	.navigation > h1 {
+		margin: 20px 16px 20px 0;
 	}
-
-		.navigation > h1 {
-			margin: 20px 16px 20px 0;
-		}
 
 	.social-networks {
 		display: flex;
 		margin-left: 170px;
-		width: 117px;
-		justify-content: space-between;
 		position: relative;
 		top: -75px;
 	}
@@ -92,14 +86,14 @@
 		padding: 20px 0 0 0;
 		display: flex;
 		flex-direction: column;
-		background-image: url(images/small_background.svg);
 		background-size: 100%;
 		background-position: center center;
 		background-repeat: no-repeat;
 	}
 
-		.container > div > h1 {
+		.container > div > h3 {
 			font-size: 36px;
+			font-weight: 500;
 			text-transform: none;
 			margin: 0;
 		}
@@ -147,14 +141,10 @@
 			}
 	/* end */
 
-	/* footer */
-	footer {
-		margin: 41px 0 0 0;
-	}
-
 	.navbar-footer {
 		display: flex;
 		flex-direction: column;
+		margin: 41px 0 0 0;
 	}
 
 		.navbar-footer > div {
@@ -169,10 +159,6 @@
 					margin: 0 0 10px 0;
 				}
 
-					.navbar-footer > .menu > .hidden {
-						display: none;
-					}
-
 					.navbar-footer > .menu > .visible {
 						display: flex;
 						height: 170px;
@@ -186,6 +172,10 @@
 	.contacts {
 		text-align: left;
 	}
+
+		.contacts > h3 {
+			padding: 0;
+		}
 
 		.contacts > div > div {
 			margin: 11px 0 11px 0;

@@ -26,6 +26,7 @@ h3 {
 	font-family: 'Inter';
 	font-weight: 400;
 	font-size: 16px;
+	color: aliceblue;
 }
 
 h4 {
@@ -38,6 +39,7 @@ p, a {
 	font-family: 'Montserrat';
 	font-weight: 400;
 	font-size: 12px;
+	color: aliceblue;
 }
 
 .visible {
@@ -77,10 +79,12 @@ header {
 
 .navigation > h1 {
 	margin: 0 0 0 30px;
+	color: aliceblue;
 }
 
 header > h1 {
 	margin: 0 0 0 137px;
+	color: aliceblue;
 }
 
 .social-networks {
@@ -111,7 +115,7 @@ header > h1 {
 
 	.container > div > h4 {
 		margin: 0;
-		/* background-color: #FF3F78; */
+		background-color: #FF3F78;
 		background-image: linear-gradient(92deg, #FCB045, #FF3F78);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
@@ -131,6 +135,7 @@ header > h1 {
 	.cont-right > h1 {
 		font-size: 18px;
 		margin: 0;
+		color: aliceblue;
 	}
 
 		.cont-right > h1 > span {
@@ -159,6 +164,7 @@ header > h1 {
 					font-size: 18px;
 					text-transform: uppercase;
 					margin: 0;
+					color: aliceblue;
 				}
 
 				.cont-right > div > div > .hidden > p {
@@ -175,11 +181,6 @@ button {
 /* end */
 
 /* footer */
-footer {
-	display: flex;
-	flex-direction: column;
-}
-
 .navbar-footer {
 	display: flex;
 	flex-direction: row;
@@ -202,34 +203,31 @@ footer {
 		}
 
 .menu > div {
-	height: 145px;
-}
-
-.menu > .visible {
-	display: none;
+	height: 150px;
 }
 
 .contacts {
 	text-align: right;
 }
 
-	.contacts > div > h1 {
-		margin: 0;
+	.contacts > h3 {
+		padding: 20px 0 0 0;
 	}
 
-	.contacts > div > div {
-		margin: 22px 0 24px 0;
-	}
-
-		.contacts > div > div > img {
-			width: 17px;
-			height: 14px;
-			margin: 0 0 0 14px;
+		.contacts > div > h1 {
+			margin: 0;
+			color: aliceblue;
 		}
 
-.contacts > h3 {
-	margin: 0;
-}
+			.contacts > div > div {
+				margin: 22px 0 24px 0;
+			}
+
+				.contacts > div > div > img {
+					width: 17px;
+					height: 14px;
+					margin: 0 0 0 14px;
+				}
 
 .rights {
 	display: flex;
