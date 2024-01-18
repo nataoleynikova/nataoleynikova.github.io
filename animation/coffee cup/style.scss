@@ -1,0 +1,597 @@
+$overflow: hidden;
+$posititon: absolute;
+$width: 100%;
+$height: 100%;
+$mix-blend-mode: darken;
+$border-radius: 50%;
+$aspect-ratio: 1;
+$color-0: #0000;
+$color-1: #fff;
+$color-2: #e0e0e0;
+$color-3: #fffc;
+$color-4: #00f;
+$color-5: #eee;
+$color-6: #ffff;
+$color-7: #fff0;
+$color-8: red;
+$color-9: blue;
+$color-10: #0001;
+$color-11: #140401;
+$outline: 1px solid #ff84;
+$background-image: 
+	radial-gradient(at 60% 65%, #fffc 5%, #fff0 20%),
+	radial-gradient(at 40% 25%, #fff7 9%, #fff0 15%);
+$background-image-1: 
+	radial-gradient(at 60% 65%, #fffc 5%, #fff0 20%),
+	radial-gradient(at 40% 25%, #fff 9%, #fff0 15%);
+$box-shadow-1: 0 0 0.1vmin 0.1vmin #ff84;
+$box-shadow-2: 0 0.1vmin 0.2vmin 0.1vmin #ff84;
+$box-shadow-3: 0 0.1vmin 0 0.1vmin #ff84;
+
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow: $overflow;
+	background-color: #fafafa !important;
+}
+
+.container {
+	position: $posititon;
+	width: $width;
+	height: $height;
+}
+
+button {
+	margin: 120px 0 0 120px;
+	background: $color-11;
+	padding: 10px;
+	cursor: pointer;
+}
+
+span {
+	color: $color-1;
+}
+
+section {
+	position: $posititon;
+	height: 40vmin;
+	aspect-ratio: $aspect-ratio;
+
+	&::before, &::after {
+		position: $posititon;
+		box-sizing: border-box;
+	}
+}
+
+.stain {
+	background: $color-5;
+	top: 45%;
+	left: 60%;
+	opacity: 0.35;
+	filter: sepia(200%) brightness(360%) contrast(130%) hue-rotate(-15deg) grayscale(20%);
+	mix-blend-mode: $mix-blend-mode;
+
+	.main-stain {
+		background: 
+			radial-gradient(circle at 70% 20%, $color-4 10%, $color-0 0), 
+			radial-gradient(circle at 81% 40%, $color-4 6%, $color-0 0), 
+			radial-gradient(circle at 20% 20%, $color-4 6%, $color-0 0), 
+			$color-1;
+		top: 50%;
+		left: 55%;
+		width: 80%;
+		transform: translate(-50%, -50%);
+		aspect-ratio: $aspect-ratio;
+		border-radius: $border-radius;
+		box-shadow: 
+			inset 5vmin -0.75vmin 0 -2.75vmin #006,
+			inset -1vmin -1vmin $color-9,
+			inset -1.5vmin 2.5vmin $color-9,
+			1vmin 2vmin $color-9,
+			-1vmin 2vmin 0 -1vmin $color-9,
+			0 0 0 16vmin $color-1;
+		filter: blur(1.5vmin) contrast(500);
+	}
+
+	.splash-stain {
+		position: $posititon;
+		width: 12vmin;
+		aspect-ratio: $aspect-ratio;
+		background: 
+			repeating-conic-gradient($color-4 0 3%, $color-0 0 11%),
+			repeating-conic-gradient($color-0 0 5%, $color-4 0 7%) 50% / 60% 60%,
+			repeating-conic-gradient($color-0 0 7%, $color-4 0 9%) 50% / 70% 70%,
+			repeating-conic-gradient($color-0 0 11%, $color-4 0 13%) 50% / 80% 80%,
+			radial-gradient($color-4 22%, $color-0 0),
+			$color-1;
+		background-repeat: no-repeat;
+		filter: blur(0.78vmin) contrast(50)drop-shadow(0 0 0.75vmin #f008);
+		box-shadow: 0 0 0 6vmin $color-1;
+		top: -50%;
+		left: 10%;
+		border-radius: $border-radius;
+		mix-blend-mode: $mix-blend-mode;
+	}
+}
+
+.coffee-cup {
+	left: 37%;
+	top: 35%;
+	border-radius: $border-radius;
+	background: $color-1;
+	box-shadow: 
+		-3.5vmin -2vmin 2vmin -1vmin $color-10,
+		-0.5vmin -0.5vmin 2vmin #0002,
+		0 0 5vmin $color-10;
+
+	.handle {
+		position: $posititon;
+		background: 
+			radial-gradient(13% 45% at 83% 50%, $color-1, $color-0),
+			radial-gradient(100% 300% at 0% 70%, #00000018 15%, $color-0 30%),
+			radial-gradient(100% 300% at 0% 50%, $color-10 15%, $color-0 30%),
+			linear-gradient(90deg, $color-0 60%, $color-5),
+			radial-gradient(at 0 100%, $color-3, $color-6),
+			$color-1;
+		border-radius: 0 2vmin 2vmin 1vmin;
+		width: 32%;
+		height: 18%;
+		top: 99%;
+		left: 45%;
+		transform: rotate(75deg);
+		box-shadow: 
+			inset 0.5vmin 0 1vmin $color-10,
+			-7vmin 1vmin 2vmin $color-10,
+			-2.5vmin 0.5vmin 2vmin $color-10,
+			0 0 5vmin $color-10;
+	}
+
+	.cup {
+		width: $width;
+		height: $height;
+		background: 
+			radial-gradient(farthest-side at 49% 49%, $color-3 85%, $color-7 90%),
+			radial-gradient(farthest-side at 51% 51%, #0002 86.5%, $color-7 90%),
+			radial-gradient(farthest-side, $color-6, $color-2);
+		border-radius: $border-radius;
+		box-shadow: 
+			inset -0.5vmin -0.5vmin 1vmin 0.125vmin $color-3,
+			inset 0.5vmin 0.5vmin 1vmin $color-3;
+	
+		.coffee {
+			position: $posititon;
+			width: 90%;
+			aspect-ratio: $aspect-ratio;
+			background: 
+				radial-gradient(50% 150% at 0 50%, #63585644 30%, $color-0 35%),
+				radial-gradient(125% 50% at 60% 0, #63585655 30%, $color-0 40%),
+				radial-gradient( closest-side circle at 45% 47%, $color-0 92%, $color-11 94%),
+				radial-gradient(circle at 110% 80%, #837876, #635856 40%, #332422 50%, #33242200 55%),
+				#080301; 
+			border-radius: $border-radius;
+			top: 5%;
+			left: 5%;
+			overflow: $overflow;
+
+			.dot {
+				position: $posititon;
+				border-radius: $border-radius;
+				background: #bc924c;
+				opacity: 0;
+			}
+
+			.foam {
+				width: $width;
+				aspect-ratio: $aspect-ratio;
+				background:
+					linear-gradient(140deg, $color-0 84%, $color-8 0),
+					radial-gradient(35% 100% at 0 50%, $color-8 20%, $color-0 0),
+					radial-gradient(125% 40% at 60% 0, $color-8 25%, $color-0 0),
+					radial-gradient(farthest-side, $color-0 75%, $color-11 0);
+				filter: blur(1vmin) contrast(300) hue-rotate(63deg) brightness(2.5) sepia(60%) blur(0.05vmin);
+				box-shadow:
+					inset 0.2vmin 1.5vmin $color-8,
+					inset 0.65vmin 0 $color-8,
+					inset -0.5vmin 1.25vmin $color-8,
+					0 0 0 3vmin $color-8;
+				opacity: 0.8;
+				border-radius: $border-radius;
+			}
+
+			.bubbles {
+				width: $width;
+				height: $height;
+				border-radius: $border-radius;
+				box-shadow: inset 3vmin 1.5vmin 0.75vmin -2.5vmin #ffe57966;
+
+				.bubble {
+					// --s: 0.75vmin;
+					aspect-ratio: $aspect-ratio;
+					background: $color-11;
+					background-image: 
+						radial-gradient(circle at 60% 75%, $color-3 5%, $color-7 20%),
+						radial-gradient(at 80% 65%, #fff7 2%, $color-7 15%);
+					// box-shadow: 
+					// 	inset -1vmin -1vmin -1vmin -1vmin #ff84,
+					// 	inset 0 0 0.25vmin #14040188,
+					// 	0 0 var(--s) #ff86;
+				}
+
+				// top
+				.bubble-00 {
+					position: $posititon;
+					width: 9%;
+					height: 7%;
+					background-image: 
+						radial-gradient(at 60% 75%, $color-3 5%, $color-7 20%),
+						radial-gradient(at 80% 65%, $color-3 2%, $color-7 15%);
+					border-radius: $border-radius;
+					top: 1%;
+					left: 42%;
+				}
+				
+				.bubble-01 {
+					position: $posititon;
+					width: 8%;
+					background-image: $background-image;
+					border-radius: $border-radius;
+					top: 1.5%;
+					left: 52%;
+				}
+
+				.bubble-02 {
+					position: $posititon;
+					width: 4%;
+					border-radius: $border-radius;
+					box-shadow: $box-shadow-1;
+					top: 7%;
+					left: 49%;
+				}
+				
+				.bubble-03 {
+					position: $posititon;
+					width: 3%;
+					border-radius: $border-radius;
+					box-shadow: $box-shadow-1;
+					top: 0.3%;
+					left: 50.2%;
+				}
+
+				.bubble-04 {
+					position: $posititon;
+					width: 1.2%;
+					border-radius: $border-radius;
+					box-shadow: 
+						$box-shadow-1,
+						0.9vmin 1.2vmin $color-11,
+						1.35vmin 1.3vmin 0 -0.07vmin $color-11,
+						1.7vmin 1.3vmin 0 -0.1vmin $color-11,
+						0.1vmin -0.85vmin 0 -0.07vmin $color-11;
+					top: 5.75%;
+					left: 50.75%;
+				}
+
+				.bubble-05 {
+					position: $posititon;
+					width: 2%;
+					border-radius: $border-radius;
+					box-shadow: $box-shadow-1;
+					top: 8.75%;
+					left: 57.5%;
+				}
+
+				.bubble-06 {
+					position: $posititon;
+					width: 3.7%;
+					border-radius: $border-radius;
+					box-shadow: $box-shadow-1;
+					top: 2.75%;
+					left: 37%;
+				}
+
+				.bubble-07 {
+					position: $posititon;
+					width: 2%;
+					border-radius: $border-radius;
+					box-shadow: $box-shadow-1;
+					top: 1.75%;
+					left: 40%;
+				}
+
+				.bubble-08 {
+					position: $posititon;
+					width: 2.25%;
+					border-radius: $border-radius;
+					box-shadow: $box-shadow-1;
+					top: 5.75%;
+					left: 40%;
+				}
+
+				.bubble-09 {
+					position: $posititon;
+					width: 5%;
+					border-radius: $border-radius;
+					top: 2%;
+					left: 60.5%;
+				}
+
+				.bubble-10 {
+					aspect-ratio: 5/4;
+					position: $posititon;
+					width: 4%;
+					border-radius: $border-radius;
+					box-shadow: $box-shadow-1;
+					top: 7%;
+					left: 60%;
+				}
+
+				.bubble-11 {
+					aspect-ratio: 9/8;
+					position: $posititon;
+					width: 5.5%;
+					border-radius: $border-radius;
+					box-shadow: $box-shadow-1;
+					top: 5.2%;
+					left: 65%;
+				}
+
+				.bubble-12 {
+					aspect-ratio: 5/3;
+					position: $posititon;
+					width: 6%;
+					border-radius: 50% / 25% 25% 100% 100%;
+					box-shadow: $box-shadow-2;
+					transform: rotate(45deg);
+					top: 15.8%;
+					left: 82.2%;
+				}
+
+				// top left
+				.bubble-13 {
+					aspect-ratio: 5/3;
+					position: $posititon;
+					width: 6%;
+					border-radius: 50% / 25% 25% 100% 100%;
+					box-shadow: $box-shadow-2;
+					transform: rotate(-28deg);
+					top: 5.8%;
+					left: 25%;
+				}
+
+				.bubble-14 {
+					aspect-ratio: 9/8;
+					position: $posititon;
+					width: 3.5%;
+					border-radius: $border-radius;
+					box-shadow: $box-shadow-2;
+					top: 10.2%;
+					left: 20%;
+				}
+
+				.bubble-15 {
+					position: $posititon;
+					width: 1.5%;
+					border-radius: $border-radius;
+					box-shadow: $box-shadow-2;
+					top: 10%;
+					left: 23.5%;
+				}
+
+				.bubble-16 {
+					position: $posititon;
+					width: 2.5%;
+					border-radius: $border-radius;
+					top: 8.2%;
+					left: 25.25%;
+				}
+
+				.bubble-17 {
+					position: $posititon;
+					width: 1.15%;
+					border-radius: $border-radius;
+					top: 9.5%;
+					left: 25.25%;
+				}
+
+				.bubble-18 {
+					position: $posititon;
+					width: 1.25%;
+					border-radius: $border-radius;
+					top: 12%;
+					left: 18.7%;
+				}
+
+				.bubble-19 {
+					position: $posititon;
+					width: 2%;
+					border-radius: $border-radius;
+					box-shadow: $box-shadow-3;
+					top: 13%;
+					left: 19%;
+				}
+
+				.bubble-20 {
+					position: $posititon;
+					width: 3%;
+					border-radius: $border-radius;
+					box-shadow: $box-shadow-3;
+					top: 13.4%;
+					left: 16%;
+				}
+
+				.bubble-21 {
+					position: $posititon;
+					width: 2.2%;
+					border-radius: $border-radius;
+					box-shadow: $box-shadow-3;
+					top: 13%;
+					left: 16.84%;
+				}
+
+				// left
+				.bubble-22 {
+					position: $posititon;
+					width: 6%;
+					height: 8%;
+					background-image: 
+						radial-gradient(at 60% 75%, $color-3 5%, $color-7 20%),
+						radial-gradient(at 80% 65%, #fff2 2%, $color-7 15%);
+					border-radius: $border-radius;
+					top: 42%;
+					left: 0.8%;
+				}
+				.bubble-23 {
+					position: $posititon;
+					width: 3%;
+					border-radius: $border-radius;
+					top: 50%;
+				}
+
+				.bubble-24 {
+					position: $posititon;
+					width: 4%;
+					border-radius: $border-radius;
+					box-shadow: 0 0 0.2vmin 0.1vmin #ff84;
+					top: 54%;
+					left: 3%;
+				}
+
+				.bubble-25 {
+					position: $posititon;
+					width: 2.5%;
+					border-radius: $border-radius;
+					box-shadow: 0 0 0.2vmin 0.2vmin #ff84;
+					top: 49.25%;
+					left: 5%;
+				}
+
+				.bubble-26 {
+					position: $posititon;
+					width: 3.5%;
+					border-radius: $border-radius;
+					top: 36.65%;
+					left: 2%;
+				}
+
+				.bubble-27 {
+					position: $posititon;
+					width: 1.5%;
+					border-radius: $border-radius;
+					top: 40.25%;
+					left: 2%;
+				}
+
+				.bubble-28 {
+					position: $posititon;
+					width: 2%;
+					border-radius: $border-radius;
+					top: 40%;
+					left: 4.25%;
+				}
+
+				.bubble-29 {
+					position: $posititon;
+					width: 2%;
+					border-radius: $border-radius;
+					top: 50.35%;
+					left: 3%;
+				}
+
+				.bubble-30 {
+					position: $posititon;
+					width: 2.3%;
+					border-radius: $border-radius;
+					top: 51.7%;
+					left: 4.5%;
+				}
+
+				.bubble-31 {
+					position: $posititon;
+					width: 1.5%;
+					border-radius: $border-radius;
+					top: 48.5%;
+					left: 0.125%;
+				}
+
+				.bubble-32 {
+					position: $posititon;
+					width: 4%;
+					border-radius: $border-radius;
+					box-shadow: 0 0 0.04vmin 0.2vmin #ff82;
+					top: 60%;
+					left: 1.5%;
+					aspect-ratio: 3/5;
+				}
+
+				// bottom right
+				.bubble-33 {
+					position: $posititon;
+					width: 1.7%;
+					background-image: $background-image;
+					border: 1px solid #ff88 $border-radius;
+					top: 80%;
+					left: 88%;
+				}
+
+				.bubble-34 {
+					position: $posititon;
+					width: 2%;
+					background-image: $background-image;
+					border-radius: $border-radius;
+					top: 87%;
+					left: 80%;
+				}
+
+				.bubble-35 {
+					position: $posititon;
+					width: 1.25%;
+					border-radius: $border-radius;
+					top: 88.75%;
+					left: 78.5%;
+				}
+
+				.bubble-36 {
+					position: $posititon;
+					width: 1.5%;
+					background-image: $background-image;
+					border-radius: $border-radius;
+					top: 84.5%;
+					left: 83%;
+				}
+
+				.bubble-37 {
+					position: $posititon;
+					width: 1.5%;
+					background-image: $background-image-1;
+					outline: $outline;
+					border-radius: $border-radius;
+					top: 82.3%;
+					left: 84.75%;
+				}
+
+				.bubble-38 {
+					position: $posititon;
+					width: 1.7%;
+					background-image: $background-image-1;
+					outline: $outline;
+					border-radius: $border-radius;
+					top: 92%;
+					left: 74%;
+				}
+
+				.bubble-39 {
+					position: $posititon;
+					width: 1.5%;
+					background-image: $background-image-1;
+					outline: $outline;
+					border-radius: $border-radius;
+					box-shadow: 
+						0.5vmin 0 0 -0.2vmin $color-11,
+						2.5vmin -1.5vmin 0 -0.1vmin #140404;
+					top: 90.5%;
+					left: 75%;
+				}
+			}
+		}
+	}
+}
