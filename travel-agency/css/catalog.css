@@ -2,12 +2,7 @@
 
 #section-catalog {
   padding: 50px;
-  
 }
-
-  #section-catalog .row {
-    padding: 0 0 0 50px;
-  }
 
 .probootstrap-thumbnail {
   position: relative;
@@ -20,41 +15,33 @@
   
   .probootstrap-thumbnail img {
     position: relative;
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease;
-    display: block;
-    bottom: 0;
-    z-index: 2; 
     width: 330px;
     height: 248px;
   }
 
   .probootstrap-thumbnail h3 {
-    z-index: 1;
-    display: block;
     text-align: center;
     position: relative;
-    -webkit-transition: .2s all ease;
-    -o-transition: .2s all ease;
-    transition: .2s all ease;
-    bottom: 30px; 
     font-family: 'Neucha', cursive;
     color: #000;
-    padding: 50px 0 0 0;
+    padding: 20px 0 0 0;
   }
 
-    p {
-      color: #000;
+  .probootstrap-thumbnail p {
+      z-index: 1;
+      display: block;
+      position: relative;
+      -webkit-transition: .2s all ease;
+      -o-transition: .2s all ease;
+      transition: .2s all ease;
+      opacity: 0;
+      visibility: hidden;
+      color: #000;   
+      padding: 10px 0 0 30px;
+      font-size: 18px;
     }
 
-    p:hover {
-      opacity: 1;
-      visibility: visible;
-      bottom: -20px; 
-    }
-
-    ul {
-      /* text-align: center;
-      position: relative; */
-    }
+      .probootstrap-thumbnail:hover p {
+        opacity: 1;
+        visibility: visible;
+      }

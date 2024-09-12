@@ -1,4 +1,4 @@
-// Связка days и nights
+// days and nights
 $('#days').on('input', function() {
   let value = parseInt(event.target.value);
   if (Number.isFinite(value)) {
@@ -13,7 +13,15 @@ $('#nights').on('input', function() {
   }
 });
 
-// Калькулятор
+
+// clean
+function clean() {
+  let clean = "";
+  document.getElementById('result').innerHTML = clean;
+};
+
+
+// calculator
 function calc() {
   let country = document.getElementById('country');
   let count_val = country.options[country.selectedIndex].value;
@@ -30,9 +38,4 @@ function calc() {
   let result = count_val * (days_val + nights_val) * people_val;
 
   document.getElementById('result').innerHTML = result;
-
-  // Очистка
-  $('.clean').each(function() {
-    $('.clean').val(' ');
-  });
 };

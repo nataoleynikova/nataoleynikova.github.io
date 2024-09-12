@@ -75,7 +75,7 @@
     transition: .2s all ease;
     opacity: 0;
     visibility: hidden;
-    bottom: 30px; 
+    bottom: 5px; 
     font-family: 'Neucha', cursive;
     color: #000;
   }
@@ -83,7 +83,7 @@
     .probootstrap-thumbnail:hover h3 {
       opacity: 1;
       visibility: visible;
-      bottom: -20px; 
+      bottom: -5px; 
     }
     
     .probootstrap-thumbnail:hover img {
@@ -104,3 +104,7 @@
   .probootstrap_section.bg-light {
     background: #ECECEC !important; 
   }
+
+.first_row {
+  margin: 0 0 40px 0;
+}

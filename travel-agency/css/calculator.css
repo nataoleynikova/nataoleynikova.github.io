@@ -85,8 +85,17 @@
 .result {
   border: 1px solid #00CA4C;
   border-radius: 4px;
-  text-align: center;
   width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#clean {
+  background-image: url(../images/trash.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0 18px 0 0;
 }
 
 .select2-container {
